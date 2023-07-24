@@ -1,0 +1,35 @@
+{
+    "editor.formatOnSave": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true,
+    },
+    "dart.previewFlutterUiGuides": true,
+    "dart.previewFlutterUiGuidesCustomTracking": true,
+    "dart.lineLength": 100,
+    "dart.enableSdkFormatter": true,
+    "dart.buildRunnerAdditionalArgs": [
+        "--delete-conflicting-outputs"
+    ],
+    "dart.warnWhenEditingFilesOutsideWorkspace": true,
+    "dart.debugSdkLibraries": false,
+    "[dart]": {
+        "editor.defaultFormatter": "Dart-Code.dart-code",
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            100
+        ],
+        "editor.wordBasedSuggestions": true,
+        "files.insertFinalNewline": true
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "Dart-Code.dart-code"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "dart.flutterSdkPath": "/Users/arthurbarbosa/fvm/versions/3.10.6"
+}
