@@ -59,7 +59,7 @@ class MainSliverAppBar extends SliverAppBar {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(vertical: 5),
                         child: Transform.translate(
-                          offset: Offset(0, constraints.maxHeight - kToolbarHeight),
+                          offset: Offset(0, constraints.maxHeight - kToolbarHeight - 33),
                           child: Image.asset(
                             AppImages.logoPokemon,
                             package: PackageUtils.pakcageImportName,

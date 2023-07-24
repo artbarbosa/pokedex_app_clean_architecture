@@ -95,7 +95,7 @@ class PokemonOverallInfoState extends State<PokemonOverallInfo> with TickerProvi
   Widget build(BuildContext context) {
     _calculatePokemonNamePosition();
     final screenSize = MediaQuery.of(context).size;
-    final pokemonSize = screenSize.height * 0.3;
+    final pokemonSize = screenSize.height * 0.26;
     return Stack(
       children: [
         ClipShadowPath(
@@ -118,8 +118,8 @@ class PokemonOverallInfoState extends State<PokemonOverallInfo> with TickerProvi
               height: 30,
             )),
         Positioned(
-          left: 50,
-          bottom: -10,
+          left: 10,
+          bottom: 0,
           child: PokemonImage(
             imgUrl: widget.urlImage,
             placeholder: AppImages.bulbasaur,
@@ -128,7 +128,7 @@ class PokemonOverallInfoState extends State<PokemonOverallInfo> with TickerProvi
           ),
         ),
         Positioned(
-          left: 280,
+          left: 210,
           bottom: 40,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

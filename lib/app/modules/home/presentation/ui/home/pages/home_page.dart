@@ -152,17 +152,15 @@ class _HomePageState extends State<HomePage> {
                       SliverToBoxAdapter(
                         child: Padding(
                           padding: const EdgeInsets.only(top: 60, left: 20, right: 20),
-                          child: Center(
-                            child: Text(
-                              "Qual Pokémon você está procuranto",
-                              style: isMobile
-                                  ? AppTextStylesMobile.extraBold32px.copyWith(
-                                      color: Colors.black,
-                                    )
-                                  : AppTextStylesDesktop.semiBold32px.copyWith(
-                                      color: Colors.black,
-                                    ),
-                            ),
+                          child: Text(
+                            "Qual Pokémon você está procurando ?",
+                            style: isMobile
+                                ? AppTextStylesMobile.extraBold32px.copyWith(
+                                    color: Colors.black,
+                                  )
+                                : AppTextStylesDesktop.semiBold32px.copyWith(
+                                    color: Colors.black,
+                                  ),
                           ),
                         ),
                       ),

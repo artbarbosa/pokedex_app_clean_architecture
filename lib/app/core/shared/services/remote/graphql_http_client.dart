@@ -1,4 +1,3 @@
-
 import 'package:graphql/client.dart';
 
 import '../../failures/failures.dart';

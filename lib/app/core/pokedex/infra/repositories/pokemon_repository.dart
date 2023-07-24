@@ -46,7 +46,7 @@ class PokemonRepository implements IPokemonRepository {
   Future<void> addPokemonFavorite(List<PokemonEntity> value) async {
     try {
       final list = List.generate(value.length, (index) => (value[index] as PokemonModel).toJson());
-      await datasource.addPokemonFavorite(list,StoreConst.boxPokemon, StoreConst.keyFavorites);
+      await datasource.addPokemonFavorite(list, StoreConst.boxPokemon, StoreConst.keyFavorites);
     } catch (e, stackTrace) {
       throw PokemonRepositoryError(
           label: e.toString(),
@@ -73,7 +73,8 @@ class PokemonRepository implements IPokemonRepository {
   @override
   Future<List<PokemonEntity>> getFavoritePokemons() async {
     try {
-      final list = await datasource.getFavoritePokemons(StoreConst.boxPokemon, StoreConst.keyFavorites);
+      final list =
+          await datasource.getFavoritePokemons(StoreConst.boxPokemon, StoreConst.keyFavorites);
       final listModel = list.map((e) => PokemonModel.fromJson(e)).toList();
       for (var element in listModel) {
         element.isFavorite = true;

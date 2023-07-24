@@ -144,17 +144,15 @@ class _FavoritePageState extends State<FavoritePage> {
                       SliverToBoxAdapter(
                         child: Padding(
                           padding: const EdgeInsets.only(top: 60, left: 20, right: 20),
-                          child: Center(
-                            child: Text(
-                              "Favorites",
-                              style: isMobile
-                                  ? AppTextStylesMobile.extraBold32px.copyWith(
-                                      color: Colors.black,
-                                    )
-                                  : AppTextStylesDesktop.semiBold32px.copyWith(
-                                      color: Colors.black,
-                                    ),
-                            ),
+                          child: Text(
+                            "Favorites",
+                            style: isMobile
+                                ? AppTextStylesMobile.extraBold32px.copyWith(
+                                    color: Colors.black,
+                                  )
+                                : AppTextStylesDesktop.semiBold32px.copyWith(
+                                    color: Colors.black,
+                                  ),
                           ),
                         ),
                       ),
@@ -203,7 +201,9 @@ class _FavoritePageState extends State<FavoritePage> {
                                       onPress: () {
                                         showModalBottomSheet(
                                           context: context,
-                                          useSafeArea: true,
+                                          isScrollControlled: true,
+                                          constraints:
+                                              const BoxConstraints(maxWidth: 540, maxHeight: 600),
                                           backgroundColor: Colors.transparent,
                                           builder: (context) => DetailPage(
                                             pokemonModel: pokemonModel,

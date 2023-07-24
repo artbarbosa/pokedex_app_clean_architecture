@@ -108,7 +108,7 @@ class PokemonCard extends StatelessWidget {
 
     return Positioned(
       bottom: -6,
-      right: height * 0.5,
+      right: height * 0.34,
       child: PokemonImage(
         size: Size.square(pokemonSize),
         imgUrl: imageUrl,
