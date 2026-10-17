@@ -1,4 +1,37 @@
-## Pokedex
+# Pokédex with Clean Architecture
+
+Flutter Pokédex study organized into domain, data and presentation concerns, with GraphQL, local favorites and a reusable design-system package.
+
+## Project scope
+
+A study or technical-challenge implementation from its original development period. It is shared as a portfolio reference; the original implementation and commit history are preserved.
+
+## Stack and SDK
+
+- Flutter and Dart.
+- Main declared packages: `design_system`, `google_fonts`, `dio`, `flutter_modular`, `cached_network_image`, `sliding_up_panel`, `flutter_svg`, `graphql`, `hive`, `hive_flutter`.
+- Dart SDK constraint from `pubspec.yaml`: `>=3.0.6 <4.0.0`.
+
+Use a Flutter release with a Dart SDK inside that range. Dependency modernization is a separate change from publishing this historical example.
+
+## Run
+
+```bash
+flutter pub get
+flutter run
+```
+
+## Tests
+
+The repository contains 7 Dart test files matching `*_test.dart`. Run the existing suite with a compatible SDK:
+
+```bash
+flutter test
+```
+
+Test files are learning artifacts; their presence is not a claim that they have passed on a current Flutter release.
+
+## Original project notes
 
 ## Layout
 
@@ -10,10 +43,10 @@ A Versão do flutter que é utilizada neste projeto foi a 3.10.6
 
 # Como rodar
 
-## Clonar código fonte do Muvver
+## Clonar código fonte do Pokédex
 
 - Abra o Git Bash
-- Escolha uma pasta onde colocorá o código do Muvver
+- Escolha uma pasta onde colocorá o código do Pokédex
 - Execute o seguinte comando para clonar o código: `git clone git@github.com:artbarbosa/pokedex_app_clean_architecture.git`
 -- Se for solicitado, confie no repositório
 
@@ -55,3 +88,7 @@ Como um dos aspectos mais importante durante o desenvolvimento de software, fiz 
 ## Testes Unitários 
 
 Para verificar o comportamento das unidades na aplicação e manter um desenvolvimento conciso e com maior quantidade de tratamento de erros e exceções apliquei testes unitários utilizando mocks para não criar dependência de dados externos.
+
+## Attribution
+
+Original project notes and any third-party credits are retained. Third-party services, assets and dependencies remain subject to their respective terms and licenses.
